@@ -52,18 +52,18 @@
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UI
 
-> - [x] *Проверка вакансий в результате поиска по запросу 'QA'*
->- [x] *Проверка вакансий в результате поиска по запросу 'QA' в ПАО Сбербанк в г. Москва*
->- [x] *Проверка наличия образовательной программы Магистратуры 'Data Engineering' на кафедре СберТеха в МФТИ*
->- [x] *Проверка возможности заполнение заявки в Sberseasons*
->- [x] *Проверка наличия команды 'Департамент образовательных цифровых платформ' в SberTech*
+> - [x] *Проверка наличия Интернет-банка в продуктах*
+>- [x] *Проверяем корректность адреса компании в контактах*
+>- [x] *Проверяем наличие вакансий QA, в г. Москва, направление 'Тестирование', опыт 1-3 года*
+>- [x] *Проверяем возможность ввода личных данных в форме 'Связаться с нами'*
+>- [x] *Проверяем наличие ошибки при отправке пустой формы 'Связаться с нами'*
 
 ## :computer: Запуск тестов из терминала
 
 ### Локальный запуск тестов
 
 ```bash
-gradle clean testSberTech
+gradle clean testInnoTech
 ```
 
 ### Удаленный запуск тестов
@@ -71,11 +71,11 @@ gradle clean testSberTech
 ```bash
 gradle
 clean
-testSberTech
+testInnoTech
 -Dremote=${ADDRESS}
 -Dbrowser=${BROWSER}
 -Dversion=${BROWSER_VERSION}
--Dresolution=${RESOLUTION}
+-Dresolution=${BROWSER_SIZE}
 ```
 
 ### Параметры сборки
@@ -86,14 +86,14 @@ testSberTech
 >
 > <code>BROWSER_VERSION</code> – версия браузера, в которой будут выполняться тесты (_по умолчанию - <code>100</code>_).
 >
-> <code>RESOLUTION</code> – размер окна браузера, в котором будут выполняться тесты (_по умолчанию - <code>1920x1080</code>_).
+> <code>BROWSER_SIZE</code> – размер окна браузера, в котором будут выполняться тесты (_по умолчанию - <code>1920x1080</code>_).
 
 ## <img width="4%" title="Jenkins" src="images/logo/Jenkins.svg"> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/demonstration_tests_sbertech/)
 
 *Для запуска сборки необходимо указать значения параметров и нажать кнопку <code><strong>*Собрать*</strong></code>.*
 
 <p align="center">
-  <img src="images/screens/Jenkins.png" alt="job" width="800">
+  <img src="images/screens/Jenkins1.png" alt="job" width="800">
 </p>
 
 *После выполнения сборки, в блоке <code><strong>*История сборок*</strong></code> напротив номера сборки появится
@@ -104,7 +104,7 @@ Report*</strong></code>, кликнув по которому, откроется страница с сформированны
   <img src="images/screens/Jenkins2.png" alt="job" width="1000">
 </p>
 
-## <img width="4%" title="Allure Report" src="images/logo/Allure.svg"> Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/demonstration_tests_sbertech/)
+## <img width="4%" title="Allure Report" src="images/logo/Allure.svg"> Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/demonstration_tests_inno.tech/)
 
 ### :pushpin: Общая информация
 
@@ -119,7 +119,7 @@ Report*</strong></code>, кликнув по которому, откроется страница с сформированны
 >- [x] <code><strong>*EXECUTORS*</strong></code> - отображает исполнителя текущей сборки (ссылка на сборку в Jenkins)
 
 <p align="center">
-  <img src="images/screens/AllureReporet.png" alt="Allure Report" width="900">
+  <img src="images/screens/AllureReport1.png" alt="Allure Report" width="900">
 </p>
 
 ### :pushpin: Тесты
@@ -132,7 +132,7 @@ Report*</strong></code>, кликнув по которому, откроется страница с сформированны
 ### :pushpin: Основной дашборд
 
 <p align="center">
-  <img src="images/screens/AllureTestOps.png" alt="dashboards" width="900">
+  <img src="images/screens/AllureTestOps1.png" alt="dashboards" width="900">
 </p>
 
 ### :pushpin: Тест-кейсы
