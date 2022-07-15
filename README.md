@@ -12,6 +12,9 @@
 >
 > :heavy_check_mark: [Отчет о результатах тестирования в Allure Report](#-отчет-о-результатах-тестирования-в-allure-report)
 >
+> :heavy_check_mark: [Интеграция с Allure TestOps](#-интеграция-с-allure-testops)
+>
+> :heavy_check_mark: [Интеграция с Jira](#-интеграция-с-jira)
 >
 > :heavy_check_mark: [Уведомления в Telegram с использованием бота](#-уведомления-в-telegram-с-использованием-бота)
 >
